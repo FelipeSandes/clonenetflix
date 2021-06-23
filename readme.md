@@ -8,4 +8,3 @@ HTML
 CSS
 JavaScript
 Jquery 
-Ferramenta de icone 
