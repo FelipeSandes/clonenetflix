@@ -4,62 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/main.css">
-    <link rel="stylesheet" href="/style/responsive.css">
-    <title>Clone do Netflix</title>
-    <!--owl css-->
-    <link rel="stylesheet" href="/style/owl/owl.carousel.min.css">
-    <link rel="stylesheet" href="/style/owl/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Spline+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Netflix</title>
 </head>
-<body>
-    <header>
+<body class="netflix">
         <div class="container">
             <nav class="navbar">
                 <div class="left">
                     <img src="./style/img/netflixlogo.png" alt="Logo da Netflix">
                 </div>
-                <nav class="navbar">
-                    <div class="right">
-                        <a href="#">Início</a>
-                        <a href="#">Séries</a>
-                        <a href="#">Filmes</a>
-                        <a href="#">Documentários</a>
-                    </div>
-                    </nav>
-        </div>
-    </header>
-    <main>
-        <div class="filme-principal">
-            <div class="container">
-                <h3 class="titulo">Loki</h3>
-                <p class="descricao">Loki, Deus da Trapaça, sai da sombra de seu irmão para embarcar em uma aventura que ocorre após os eventos de "Vingadores: Ultimato".</p>
-            <button role="button" class="botao">
-                <i class="fas fa-play"></i>
-                Assistir Agora
-            </button>
-            <button role="button" class="botao">
-                <i class="fas fa-info"></i>
-                Mais informações
-            </button>
-            </div>
-            </div>
-        </div>
-    </main>
+                <div class="right">
+                    <select name="language" class="language">
+                        <option value="Português">Português</option>
+                        <option value="English">English</option>
+                        <option value="Español">Español</option>
+                    </select>
+                    <button><a href="#">Login</a></button>
+                </div>
+            </nav>    
 
-    <div class="carrosel-filmes">
-        <div class="owl-carousel owl-theme">
-        <div class="item"></div>
-        <img class="box-filmes" src="/style/img/img1.jpg" alt="Filme 1">
-        <img class="box-filmes" src="style/img/img2.jpg" alt="Filme 2">
-        <img class="box-filmes" src="style/img/img3.jpg" alt="Filme 3">
-        <img class="box-filmes" src="style/img/img4.jpg" alt="Filme 4">
+    <div class="title">
+        <div class="content">
+         <h1>Filmes, séries e muito mais. Sem limites.</h1>
+            <h2>Assista onde quiser. Cancele quando quiser.</h2>
+                 <form action="#">
+                     <h4>Pronto para assistir? Informe seu email para criar ou reiniciar sua assinatura.</h4>
+                        <div class="email">
+                         <input type="text" name="email" placeholder="Entre com seu e-mail">
+                                <button><a href="/catalogo.html">Vamos lá!</a></button>
+                             </div>
+                </form>
     </div>
+        </div>
     </div>
 
-    <script src="https://kit.fontawesome.com/fa94398283.js" crossorigin="anonymous"></script>
-    <script src="/js/owl/jquery.min.js"></script>
-    <script src="/js/owl/owl.carousel.min.js"></script>
-    <script src="/js/owl/setup.js"></script>
+</div>
+
 
 </body>
 </html>

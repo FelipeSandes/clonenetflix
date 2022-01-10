@@ -12,15 +12,15 @@
 }
 
 body{
-    background: rgb(0,0,0);
+    background: var(--preto);
     color: var(--branco);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(74,71,71,1) 35%, rgba(159,153,153,1) 100%);
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
 .netflix {
-    background: rgb(0,0,0);
     color: var(--branco);
-    background: url(./img/background.jpg);
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(./img/background.jpg);
     background-size: cover;
 }
 
@@ -97,7 +97,7 @@ header .container{
 
 .filme-principal{
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(/style/img/loki.jpg);
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(/style/img/brooklin.jpeg);
     height: 600px;
     background-size: cover;
     display: flex;
@@ -109,18 +109,19 @@ header .container{
 .filme-principal .descricao{
     margin-top: 10px;
     margin-bottom: 40px;
+    font-family: 'Manrope', sans-serif;
 }
 
 .titulo{
     margin-top: 5%;
     font-size: 40px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Arimo', sans-serif;
 }
 
 .botao{
-    background-color: rgba(0,0,0, .50);
+    background-color: var(--preto);
     border: none;
-    color: white;
+    color: var(--branco);
     padding: 15px 30px;
     margin-right: 15px;
     font-size: 12px;
@@ -129,8 +130,8 @@ header .container{
 }
 
 .botao:hover{
-    background: white;
-    color: black;
+    background: var(--branco);
+    color: var(--preto);
 }
 
 .botao i{
@@ -154,7 +155,7 @@ header .container{
 }
 
 .carrosel-filmes{
-    margin-top: 5px;
+    margin-top: 1px;
 }
 
 
@@ -182,6 +183,7 @@ header .container{
     float: right;
     position: absolute;
     right: 50px;
+    font-family: 'Arimo', sans-serif;
 }
 
 /* Input de idioma */
@@ -233,3 +235,8 @@ header .container{
     color: var(--branco);
 }
 
+h4{
+    color: var(--branco);
+    font-size: 1rem;
+    margin: 5px;
+}
